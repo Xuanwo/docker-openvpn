@@ -9,5 +9,5 @@ EXPOSE 1194 1194/udp
 
 ENTRYPOINT ["dumb-init"]
 
-CMD ["/usr/local/bin/openvpn", "--cd", "/etc/openvpn/", "--config", "config.ovpn"]
+CMD ["/usr/sbin/openvpn", "--cd", "/etc/openvpn/", "--config", "config.ovpn"]
 
